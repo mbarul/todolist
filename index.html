@@ -10,14 +10,20 @@
     <title>To do list</title>
 </head>
 <body>
-    <div id="header" class="container p-3 my-3 bg-dark text-white">
+    <div id="header" class="container p-3  bg-dark text-white">
         <h1>Lista rzeczy do zrobienia</h1>
-        <input type="text" id="input" placeholder="Wpisz zadanie...">
-        <button onclick= "newElement()" type="button" class="btn btn-success btn-sm">Dodaj</button>
-    </div>
-    <ul id="myUl">
-       <li>Hit the gym</li>
-       <li class="checked">Pay bills</li> 
+        <div class="container p-2 list-group list-group-horizontal">
+        <input type="text" id="input" class= "col-sm-4"placeholder="Wpisz zadanie...">
+        <button onclick= "newElement()" type="button" class="col-sm-1 btn btn-success btn-sm">Dodaj</button>
+        </div>
+     <ul id="myUl" class="list-group p-2">
+       <li class="list-group-item bg-secondary">Hit the gym</li>
+       <li id="checked" class="list-group-item bg-secondary">Pay bills</li> 
     </ul>
+    </div>
+    
+      
+    
+    
 </body>
 </html>
